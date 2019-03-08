@@ -1,0 +1,10 @@
+sklearn
+matplotlib
+tensorflow-gpu
+keras
+h5py
+pandas
+numpy
+nose
+pycodestyle
+mnist~=0.2

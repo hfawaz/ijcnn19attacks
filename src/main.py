@@ -9,7 +9,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
-import knn
 from scipy.stats import wilcoxon
 from sklearn.linear_model import LinearRegression
 from scipy.interpolate import spline
@@ -311,63 +310,6 @@ def distortion():
         df.loc[df.dataset_name==dataset_name,'dist_std'] = dist_std
 
     df.to_csv(file_df,index=False)
-
-def NN():
-
-    root_dir = '/mnt/nfs/casimir/archives/UCR_TS_Archive_2015/'
-    root_dir_attack = '/mnt/nfs/casimir-home/gits/cleverhans/ucr-attack/results-sdm-2019/'
-    method = 'fgsm'
-    file_df = root_dir_attack + method + '/results.csv'
-
-    # df = pd.DataFrame(data=np.zeros(shape=(len(DATASETS),2),dtype=np.float32),
-    #                   index=DATASETS,columns=['ori_acc','adv_acc'])
-
-    out_file_dir = 'results-nn-dtw.csv'
-
-    df = pd.read_csv(out_file_dir, index_col=0)
-
-    for dataset_name in DATASETS:
-
-        # load attack
-        file_name_attack = root_dir_attack + method + '/' + dataset_name + '-adv'
-        data = np.loadtxt(file_name_attack, delimiter=',')
-        x_test_attack = data[:, 1:]
-
-        # load original
-        file_name = root_dir + dataset_name + '/' + dataset_name + '_TEST'
-        data = np.loadtxt(file_name, delimiter=',')
-        x_test = data[:, 1:]
-        y_test = data[:, 0]
-        # load train
-        file_name = root_dir + dataset_name + '/' + dataset_name + '_TRAIN'
-        data = np.loadtxt(file_name, delimiter=',')
-        x_train = data[:,1:]
-        y_train = data[:,0]
-        # add a dimension to make it multivariate with one dimension
-        x_train = x_train.reshape((x_train.shape[0], x_train.shape[1], 1))
-        x_test_attack = x_test_attack.reshape((x_test.shape[0], x_test.shape[1], 1))
-        x_test = x_test.reshape((x_test.shape[0], x_test.shape[1], 1))
-
-        y_train, y_test = transform_labels(y_train, y_test)
-
-        # print('Acc on attack:')
-        y_pred = knn.knn(x_train, y_train, x_test_attack, 1, distance_algorithm='dtw')
-        df_metrics = calculate_metrics(y_test, y_pred, 0.0)
-        adv_acc = df_metrics['accuracy'][0]
-
-        # print(df_metrics)
-        # print('################################')
-        # print('Ori acc:')
-        y_pred = knn.knn(x_train, y_train, x_test, 1, distance_algorithm='dtw')
-        df_metrics = calculate_metrics(y_test, y_pred, 0.0)
-        ori_acc = df_metrics['accuracy'][0]
-
-        df.loc[dataset_name,'ori_acc'] = ori_acc
-        df.loc[dataset_name,'adv_acc'] = adv_acc
-
-        df.to_csv(out_file_dir)
-
-    print('DONE')
 
 def noise():
     root_dir = '/mnt/nfs/casimir/archives/UCR_TS_Archive_2015/'
@@ -794,8 +736,4 @@ def test_models():
             print('falseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
             exit()
 
-
-
-
-# main
 mds()
