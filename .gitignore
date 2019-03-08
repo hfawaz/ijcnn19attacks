@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# added by Hassan
+ucr-attack/
+
 # Distribution / packaging
 .Python
 build/
