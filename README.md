@@ -6,7 +6,7 @@ This paper has been accepted at the [IEEE International Joint Conference on Neur
 ![fgsm](https://github.com/hfawaz/ijcnn19attacks/blob/master/img/pert-example.png)
 
 ## Data 
-The data used in this project comes from the [UCR/UEA archive](http://timeseriesclassification.com/TSC.zip), which contains the 85 univariate time series datasets. 
+The data used in this project comes from the [UCR archive](https://www.cs.ucr.edu/~eamonn/time_series_data/UCR_TS_Archive_2015.zip), which contains the 85 univariate time series datasets. 
 
 ## Code
 
