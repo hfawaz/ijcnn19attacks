@@ -99,7 +99,7 @@ def add_labels_to_adv_test_set(dataset_dict,dataset_name, adv_data_dir):
     test_set = np.zeros((y_test.shape[0],x_test_perturbed.shape[1]+1),dtype=np.float64)
     test_set[:,0] = y_test
     test_set[:,1:] = x_test_perturbed
-    np.savetxt(adv_data_dir+dataset_name++'-adv',test_set,delimiter=',')
+    np.savetxt(adv_data_dir+dataset_name+'-adv',test_set,delimiter=',')
 
 def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac',eps=0.1):
 
