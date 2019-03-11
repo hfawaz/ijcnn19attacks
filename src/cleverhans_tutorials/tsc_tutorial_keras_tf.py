@@ -86,13 +86,20 @@ def prepare_data(datasets_dict,dataset_name):
 
     return x_train, y_train, x_test, y_test,y_true, nb_classes
 
-def add_labels_to_adv_test_set(dataset_dict,dataset_name, out_dir):
+def create_directory(directory_path):
+    if os.path.exists(directory_path):
+        return None
+    else:
+        os.makedirs(directory_path)
+    return directory_path
+
+def add_labels_to_adv_test_set(dataset_dict,dataset_name, out_dir,eps):
     y_test = dataset_dict[dataset_name][3]
-    x_test_perturbed = np.loadtxt(out_dir+dataset_name+'-adv.csv', delimiter=',')
+    x_test_perturbed = np.loadtxt(out_dir+dataset_name+str(eps)+'-adv', delimiter=',')
     test_set = np.zeros((y_test.shape[0],x_test_perturbed.shape[1]+1),dtype=np.float64)
     test_set[:,0] = y_test
     test_set[:,1:] = x_test_perturbed
-    np.savetxt(out_dir+dataset_name+'-adv',test_set,delimiter=',')
+    np.savetxt(out_dir+dataset_name+str(eps)+'-adv',test_set,delimiter=',')
 
 def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac',eps=0.1):
 
@@ -117,21 +124,15 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
     sess = tf.Session()
     keras.backend.set_session(sess)
 
-    # Get UCR dataset test data
     root_dir = '/b/home/uha/hfawaz-datas/dl-tsc/'
 
     # dataset_name = 'Adiac'
     archive_name = 'UCR_TS_Archive_2015'
     classifier_name = 'resnet'
-    out_dir = '/home/hassan/gits/cleverhans/ucr-attack/'
+    out_dir = 'ucr-attack/'
     file_path = root_dir + 'results/' + classifier_name + '/' + archive_name + '/' + dataset_name + '/best_model.hdf5'
 
     dataset_dict = read_dataset(root_dir, archive_name, dataset_name)
-
-    ###################
-    # this should be done if the adv examples are already generated for this dataset without the labels
-    # add_labels_to_adv_test_set(dataset_dict,dataset_name, out_dir)
-    ###################
 
     x_train, y_train, full_x_test, full_y_test, _, nb_classes = prepare_data(dataset_dict,dataset_name)
 
@@ -140,7 +141,7 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
     ori_acc = 0
     adv_acc = 0
 
-    res_dir = out_dir + 'results.csv'
+    res_dir = out_dir + 'results'+attack_method+'.csv'
     if os.path.exists(res_dir):
         res_ori = pd.read_csv(res_dir, index_col=False)
     else:
@@ -210,7 +211,13 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
         test_set[i:i+batch_size,0] = original_y[i:i+batch_size]
         test_set[i:i+batch_size,1:] = adv
 
-    np.savetxt(out_dir+dataset_name+str(eps)+'-adv',test_set, delimiter=',')
+    adv_data_dir = out_dir+attack_method+'/eps-'+str(eps)+'/'
+
+    create_directory(adv_data_dir)
+
+    np.savetxt(adv_data_dir+dataset_name+'-adv',test_set, delimiter=',')
+
+    add_labels_to_adv_test_set(dataset_dict, dataset_name, out_dir,eps)
 
     res = pd.DataFrame(data = np.zeros((1,3),dtype=np.float), index=[0],
             columns=['dataset_name','ori_acc','adv_acc'])
@@ -222,7 +229,7 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
 
     return report
 
-def main(argv=None):
+def main(argv=None,attack_method='fgsm'):
     flags.DEFINE_integer('batch_size', BATCH_SIZE, 'Size of training batches')
 
     # full datasets
@@ -244,15 +251,15 @@ def main(argv=None):
                      'UWaveGestureLibraryAll', 'uWaveGestureLibrary_X', 'uWaveGestureLibrary_Y',
                      'uWaveGestureLibrary_Z', 'wafer', 'Wine', 'WordsSynonyms', 'Worms', 'WormsTwoClass', 'yoga']
 
-    dataset_names = ['ItalyPowerDemand']
+    dataset_names = ['Coffee']
 
     # epsilons = np.arange(start=0.0,stop=2.0,step=0.025,dtype=np.float32)
-    epsilons = [2.0]
+    epsilons = [0.1]
 
     for dataset_name in dataset_names:
         for ep in epsilons:
 
-            tsc_tutorial(attack_method='fgsm',
+            tsc_tutorial(attack_method=attack_method,
                 batch_size=FLAGS.batch_size,
                            dataset_name=dataset_name,
                            eps = ep)

@@ -10,7 +10,7 @@ class TestMNISTTutorialKerasTF(CleverHansTest):
     def test_mnist_tutorial_keras_tf(self):
 
         import tensorflow as tf
-        from cleverhans_tutorials import mnist_tutorial_keras_tf
+        from cleverhans_tutorials import tsc_tutorial_keras_tf
 
         # Run the MNIST tutorial on a dataset of reduced size
         test_dataset_indices = {'train_start': 0,
@@ -25,7 +25,7 @@ class TestMNISTTutorialKerasTF(CleverHansTest):
         g = tf.Graph()
         with g.as_default():
           np.random.seed(42)
-          report = mnist_tutorial_keras_tf.mnist_tutorial(**test_dataset_indices)
+          report = tsc_tutorial_keras_tf.mnist_tutorial(**test_dataset_indices)
 
         # Check accuracy values contained in the AccuracyReport object
         self.assertTrue(report.train_clean_train_clean_eval > 0.90)
@@ -37,7 +37,7 @@ class TestMNISTTutorialKerasTF(CleverHansTest):
         g = tf.Graph()
         with g.as_default():
           np.random.seed(42)
-          report_2 = mnist_tutorial_keras_tf.mnist_tutorial(**test_dataset_indices)
+          report_2 = tsc_tutorial_keras_tf.mnist_tutorial(**test_dataset_indices)
 
         self.assertClose(report.train_clean_train_clean_eval,
                          report_2.train_clean_train_clean_eval,
