@@ -14,6 +14,26 @@ These are the models used to generate the adversarial time series examples.
 They are published for reproducibility, nevertheless the code can be applied to any model in the [h5py](http://docs.h5py.org/en/latest/build.html) format. 
 
 ## Code
+To perform the ```fgsm``` attack on the datasets in the UCR archive you can run the following command: 
+```
+python3 main.py attack fgsm 
+```
+Another option would be the ```bim``` attack. 
+
+Once the perturbed time series are generated, you can launch this command to plot and visualize the difference: 
+```
+python3 main.py draw fgsm 
+```
+
+If you want to visualize the noise as well you can run this command: 
+```
+python3 main.py noise fgsm 
+```
+
+Finally to plot the Multi-Dimensional Scaling (MDS) and visualize the difference between an original and perturbed dataset, you can issue this command: 
+```
+python3 main.py mds fgsm 
+```
 
 ## Prerequisites
 All python packages needed are listed in [pip-requirements.txt](https://github.com/hfawaz/ijcnn19ensemble/blob/master/src/utils/pip-requirements.txt) file and can be installed simply using the pip command.
