@@ -13,12 +13,23 @@ You can download the pre-trained ResNet models for each dataset in the archive [
 These are the models used to generate the adversarial time series examples. 
 They are published for reproducibility, nevertheless the code can be applied to any model in the [h5py](http://docs.h5py.org/en/latest/build.html) format. 
 
+## Prerequisites
+All python packages needed are listed in [pip-requirements.txt](https://github.com/hfawaz/ijcnn19ensemble/blob/master/src/utils/pip-requirements.txt) file and can be installed simply using the pip command.
+
+* [numpy](http://www.numpy.org/)  
+* [pandas](https://pandas.pydata.org/)  
+* [sklearn](http://scikit-learn.org/stable/)  
+* [scipy](https://www.scipy.org/)  
+* [matplotlib](https://matplotlib.org/)  
+* [tensorflow-gpu](https://www.tensorflow.org/)  
+* [keras](https://keras.io/)  
+* [h5py](http://docs.h5py.org/en/latest/build.html)
+
 ## Code
-To perform the ```fgsm``` attack on the datasets in the UCR archive you can run the following command: 
+To perform the ```fgsm``` (or ```bim```) attack on the datasets in the UCR archive you can run the following command: 
 ```
 python3 main.py attack fgsm 
 ```
-Another option would be the ```bim``` attack. 
 
 Once the perturbed time series are generated, you can launch this command to plot and visualize the difference: 
 ```
@@ -34,18 +45,6 @@ Finally to plot the Multi-Dimensional Scaling (MDS) and visualize the difference
 ```
 python3 main.py mds fgsm 
 ```
-
-## Prerequisites
-All python packages needed are listed in [pip-requirements.txt](https://github.com/hfawaz/ijcnn19ensemble/blob/master/src/utils/pip-requirements.txt) file and can be installed simply using the pip command.
-
-* [numpy](http://www.numpy.org/)  
-* [pandas](https://pandas.pydata.org/)  
-* [sklearn](http://scikit-learn.org/stable/)  
-* [scipy](https://www.scipy.org/)  
-* [matplotlib](https://matplotlib.org/)  
-* [tensorflow-gpu](https://www.tensorflow.org/)  
-* [keras](https://keras.io/)  
-* [h5py](http://docs.h5py.org/en/latest/build.html)
 
 ## Results 
 
