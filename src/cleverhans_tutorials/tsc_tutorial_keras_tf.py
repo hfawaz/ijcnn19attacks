@@ -93,13 +93,13 @@ def create_directory(directory_path):
         os.makedirs(directory_path)
     return directory_path
 
-def add_labels_to_adv_test_set(dataset_dict,dataset_name, out_dir,eps):
+def add_labels_to_adv_test_set(dataset_dict,dataset_name, adv_data_dir):
     y_test = dataset_dict[dataset_name][3]
-    x_test_perturbed = np.loadtxt(out_dir+dataset_name+str(eps)+'-adv', delimiter=',')
+    x_test_perturbed = np.loadtxt(adv_data_dir+dataset_name+'-adv', delimiter=',')
     test_set = np.zeros((y_test.shape[0],x_test_perturbed.shape[1]+1),dtype=np.float64)
     test_set[:,0] = y_test
     test_set[:,1:] = x_test_perturbed
-    np.savetxt(out_dir+dataset_name+str(eps)+'-adv',test_set,delimiter=',')
+    np.savetxt(adv_data_dir+dataset_name++'-adv',test_set,delimiter=',')
 
 def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac',eps=0.1):
 
@@ -130,7 +130,6 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
     archive_name = 'UCR_TS_Archive_2015'
     classifier_name = 'resnet'
     out_dir = 'ucr-attack/'
-    create_directory(out_dir)
     file_path = root_dir + 'results/' + classifier_name + '/' + archive_name + '/' + dataset_name + '/best_model.hdf5'
 
     dataset_dict = read_dataset(root_dir, archive_name, dataset_name)
@@ -218,7 +217,7 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
 
     np.savetxt(adv_data_dir+dataset_name+'-adv',test_set, delimiter=',')
 
-    add_labels_to_adv_test_set(dataset_dict, dataset_name, out_dir,eps)
+    add_labels_to_adv_test_set(dataset_dict, dataset_name, adv_data_dir)
 
     res = pd.DataFrame(data = np.zeros((1,3),dtype=np.float), index=[0],
             columns=['dataset_name','ori_acc','adv_acc'])
