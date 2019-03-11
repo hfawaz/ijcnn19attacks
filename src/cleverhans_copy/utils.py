@@ -264,7 +264,7 @@ def get_logits_over_interval(sess, model, x_data, fgsm_params,
 
   x_data = np.expand_dims(x_data, axis=0)
   import tensorflow as tf
-  from cleverhans.attacks import FastGradientMethod
+  from cleverhans_copy.attacks import FastGradientMethod
 
   # Define the data placeholder
   x = tf.placeholder(dtype=tf.float32,

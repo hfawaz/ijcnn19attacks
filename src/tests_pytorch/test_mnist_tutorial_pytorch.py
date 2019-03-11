@@ -1,7 +1,7 @@
 import unittest
 
 import numpy as np
-from cleverhans.devtools.checks import CleverHansTest
+from cleverhans_copy.devtools.checks import CleverHansTest
 
 
 class TestMNISTTutorialPytorch(CleverHansTest):

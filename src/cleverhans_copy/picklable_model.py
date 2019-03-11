@@ -15,9 +15,9 @@ from __future__ import print_function
 import tensorflow as tf
 import numpy as np
 
-from cleverhans.model import Model
-from cleverhans.serial import PicklableVariable as PV
-from cleverhans.utils import ordered_union
+from cleverhans_copy.model import Model
+from cleverhans_copy.serial import PicklableVariable as PV
+from cleverhans_copy.utils import ordered_union
 
 
 class PicklableModel(Model):

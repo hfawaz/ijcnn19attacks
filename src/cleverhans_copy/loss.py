@@ -4,9 +4,9 @@ import warnings
 
 import tensorflow as tf
 
-from cleverhans.compat import softmax_cross_entropy_with_logits
-from cleverhans.model import Model
-from cleverhans.utils import safe_zip
+from cleverhans_copy.compat import softmax_cross_entropy_with_logits
+from cleverhans_copy.model import Model
+from cleverhans_copy.utils import safe_zip
 
 
 class Loss(object):

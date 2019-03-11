@@ -14,10 +14,10 @@ from tensorflow.examples.tutorials.mnist import input_data
 from tensorflow.python.platform import app
 from tensorflow.python.platform import flags
 from madry_mnist_model import MadryMNIST
-from cleverhans.utils_tf import model_eval
-from cleverhans.attacks import FastGradientMethod
-from cleverhans.attacks import BasicIterativeMethod
-from cleverhans.utils_mnist import data_mnist
+from cleverhans_copy.utils_tf import model_eval
+from cleverhans_copy.attacks import FastGradientMethod
+from cleverhans_copy.attacks import BasicIterativeMethod
+from cleverhans_copy.utils_mnist import data_mnist
 
 
 FLAGS = flags.FLAGS

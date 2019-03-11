@@ -17,12 +17,12 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.python.platform import flags
 
-from cleverhans.attacks import CarliniWagnerL2
-from cleverhans.loss import CrossEntropy
-from cleverhans.utils import grid_visual, AccuracyReport
-from cleverhans.utils import set_log_level
-from cleverhans.utils_mnist import data_mnist
-from cleverhans.utils_tf import train, model_eval, tf_model_load
+from cleverhans_copy.attacks import CarliniWagnerL2
+from cleverhans_copy.loss import CrossEntropy
+from cleverhans_copy.utils import grid_visual, AccuracyReport
+from cleverhans_copy.utils import set_log_level
+from cleverhans_copy.utils_mnist import data_mnist
+from cleverhans_copy.utils_tf import train, model_eval, tf_model_load
 from cleverhans_tutorials.tutorial_models import ModelBasicCNN
 
 FLAGS = flags.FLAGS

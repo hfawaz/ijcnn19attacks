@@ -22,10 +22,10 @@ from six.moves import xrange
 from tensorflow.contrib import slim
 from tensorflow.contrib.slim.nets import inception
 from PIL import Image
-from cleverhans.attacks import SPSA
-from cleverhans.devtools.checks import CleverHansTest
-from cleverhans.model import Model
-from cleverhans.utils import CLEVERHANS_ROOT
+from cleverhans_copy.attacks import SPSA
+from cleverhans_copy.devtools.checks import CleverHansTest
+from cleverhans_copy.model import Model
+from cleverhans_copy.utils import CLEVERHANS_ROOT
 
 SETUP_INSTRUCTIONS = """
 $ ./examples/nips17_adversarial_competition/dev_toolkit/download_data.sh

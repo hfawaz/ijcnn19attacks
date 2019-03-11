@@ -4,12 +4,12 @@
 import numpy as np
 from functools import partial
 import tensorflow as tf
-from cleverhans.devtools.checks import CleverHansTest
-from cleverhans.attacks_tf import fgm, pgd_attack,\
+from cleverhans_copy.devtools.checks import CleverHansTest
+from cleverhans_copy.attacks_tf import fgm, pgd_attack,\
     UnrolledAdam, UnrolledGradientDescent
-from cleverhans.devtools.mocks import random_feed_dict
+from cleverhans_copy.devtools.mocks import random_feed_dict
 import unittest
-from cleverhans.model import Model
+from cleverhans_copy.model import Model
 
 
 class SimpleModel(Model):

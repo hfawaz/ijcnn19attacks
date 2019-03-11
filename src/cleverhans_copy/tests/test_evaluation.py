@@ -1,5 +1,5 @@
-from cleverhans.evaluation import _CorrectFactory
-from cleverhans.model import Model
+from cleverhans_copy.evaluation import _CorrectFactory
+from cleverhans_copy.model import Model
 
 
 def test_cache():

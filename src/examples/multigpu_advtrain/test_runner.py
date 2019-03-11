@@ -7,7 +7,7 @@ import unittest
 import numpy as np
 import tensorflow as tf
 
-from cleverhans.devtools.checks import CleverHansTest
+from cleverhans_copy.devtools.checks import CleverHansTest
 
 from runner import RunnerMultiGPU
 

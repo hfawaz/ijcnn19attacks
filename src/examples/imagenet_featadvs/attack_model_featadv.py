@@ -12,7 +12,7 @@ import tensorflow as tf
 from tensorflow.python.platform import app
 from tensorflow.python.platform import flags
 
-from cleverhans.attacks import FastFeatureAdversaries
+from cleverhans_copy.attacks import FastFeatureAdversaries
 from model import make_imagenet_cnn
 
 

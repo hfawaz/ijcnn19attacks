@@ -39,7 +39,7 @@ from six import iteritems
 
 import eval_lib
 
-from cleverhans.utils import shell_call
+from cleverhans_copy.utils import shell_call
 
 
 # Sleep time while waiting for next available piece of work

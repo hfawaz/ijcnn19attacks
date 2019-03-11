@@ -10,10 +10,10 @@ import subprocess
 
 from nose.plugins.skip import SkipTest
 
-import cleverhans
-from cleverhans.devtools.tests.docscrape import docstring_errors
-from cleverhans.devtools.list_files import list_files
-from cleverhans.utils import shell_call
+import cleverhans_copy
+from cleverhans_copy.devtools.tests.docscrape import docstring_errors
+from cleverhans_copy.devtools.list_files import list_files
+from cleverhans_copy.utils import shell_call
 
 # Enter a manual list of files that are allowed to violate PEP8 here
 whitelist_pep8 = [
@@ -23,22 +23,22 @@ whitelist_pep8 = [
 
 # We don't want to test RL-attack because it has so many dependencies
 # not used elsewhere, and pylint wants to import them all
-whitelist_pep8.extend([os.path.relpath(path, cleverhans.__path__[0])
+whitelist_pep8.extend([os.path.relpath(path, cleverhans_copy.__path__[0])
                        for path in list_files(".py") if "RL-attack" in path])
 # Similarly, we don't want to require robust_vision_benchmark installed
-whitelist_pep8.extend([os.path.relpath(path, cleverhans.__path__[0])
+whitelist_pep8.extend([os.path.relpath(path, cleverhans_copy.__path__[0])
                        for path in list_files(".py")
                        if "robust_vision_benchmark" in path])
 # Similarly, we don't want to require that cloud be installed
-whitelist_pep8.extend([os.path.relpath(path, cleverhans.__path__[0])
+whitelist_pep8.extend([os.path.relpath(path, cleverhans_copy.__path__[0])
                        for path in list_files(".py")
                        if "cloud_client" in path])
 # This example has more dependencies too
-whitelist_pep8.extend([os.path.relpath(path, cleverhans.__path__[0])
+whitelist_pep8.extend([os.path.relpath(path, cleverhans_copy.__path__[0])
                        for path in list_files(".py")
                        if "facenet_adversarial_faces" in path])
 # This too
-whitelist_pep8.extend([os.path.relpath(path, cleverhans.__path__[0])
+whitelist_pep8.extend([os.path.relpath(path, cleverhans_copy.__path__[0])
                        for path in list_files(".py")
                        if "madry_lab_challenges" in path])
 
@@ -53,7 +53,7 @@ def test_format_pep8():
   Test if pep8 is respected.
   """
   files_to_check = []
-  module_dir = cleverhans.__path__[0]
+  module_dir = cleverhans_copy.__path__[0]
   for path in list_files(".py"):
     rel_path = os.path.relpath(path, module_dir)
     if rel_path in whitelist_pep8:
@@ -117,7 +117,7 @@ def print_files_information_pep8():
   pep8_checker = StyleGuide(quiet=True)
   for path in list_files(".py"):
     number_of_infractions = pep8_checker.input_file(path)
-    rel_path = os.path.relpath(path, cleverhans.__path__[0])
+    rel_path = os.path.relpath(path, cleverhans_copy.__path__[0])
     if number_of_infractions > 0:
       if rel_path not in whitelist_pep8:
         infracting_files.append(path)
@@ -158,7 +158,7 @@ def verify_format_docstrings():
   format_infractions = []
 
   for path in list_files(".py"):
-    rel_path = os.path.relpath(path, cleverhans.__path__[0])
+    rel_path = os.path.relpath(path, cleverhans_copy.__path__[0])
     if rel_path in whitelist_docstrings:
       continue
     try:

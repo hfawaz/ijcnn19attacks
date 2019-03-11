@@ -9,8 +9,8 @@ import unittest
 import numpy as np
 import tensorflow as tf
 
-from cleverhans.utils import AccuracyReport
-from cleverhans.devtools.checks import CleverHansTest
+from cleverhans_copy.utils import AccuracyReport
+from cleverhans_copy.devtools.checks import CleverHansTest
 from run_multigpu import run_trainer
 
 

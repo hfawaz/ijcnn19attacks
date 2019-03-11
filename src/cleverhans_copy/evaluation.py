@@ -8,8 +8,8 @@ import numpy as np
 from six.moves import range
 import tensorflow as tf
 
-from cleverhans.utils import create_logger
-from cleverhans.utils_tf import infer_devices
+from cleverhans_copy.utils import create_logger
+from cleverhans_copy.utils_tf import infer_devices
 
 
 def accuracy(sess, model, x, y, batch_size=None, devices=None, feed=None):

@@ -6,7 +6,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from cleverhans.utils_mnist import data_mnist
+from cleverhans_copy.utils_mnist import data_mnist
 
 keras = None  # Only load keras if user tries to use a dataset that requires it
 

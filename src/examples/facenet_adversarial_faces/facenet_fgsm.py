@@ -2,8 +2,8 @@ import facenet
 
 import tensorflow as tf
 import numpy as np
-from cleverhans.model import Model
-from cleverhans.attacks import FastGradientMethod
+from cleverhans_copy.model import Model
+from cleverhans_copy.attacks import FastGradientMethod
 
 import set_loader
 

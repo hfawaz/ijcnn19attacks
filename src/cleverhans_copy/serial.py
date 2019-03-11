@@ -9,8 +9,8 @@ from __future__ import print_function
 import joblib
 import tensorflow as tf
 
-from cleverhans.model import Model
-from cleverhans.utils import safe_zip
+from cleverhans_copy.model import Model
+from cleverhans_copy.utils import safe_zip
 
 
 class PicklableVariable(object):

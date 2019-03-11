@@ -5,12 +5,12 @@ import warnings
 import numpy as np
 from six.moves import xrange
 
-import cleverhans.utils as utils
-from cleverhans.model import Model, CallableModelWrapper
-from cleverhans.compat import reduce_sum, reduce_mean
-from cleverhans.compat import reduce_max, reduce_min
-from cleverhans.compat import reduce_any
-from cleverhans.utils_tf import clip_eta
+import cleverhans_copy.utils as utils
+from cleverhans_copy.model import Model, CallableModelWrapper
+from cleverhans_copy.compat import reduce_sum, reduce_mean
+from cleverhans_copy.compat import reduce_max, reduce_min
+from cleverhans_copy.compat import reduce_any
+from cleverhans_copy.utils_tf import clip_eta
 
 _logger = utils.create_logger("cleverhans.attacks")
 
@@ -37,7 +37,7 @@ class Attack(object):
 
     self.np_dtype = np.dtype(dtypestr)
 
-    import cleverhans.attacks_tf as attacks_tf
+    import cleverhans_copy.attacks_tf as attacks_tf
     attacks_tf.np_dtype = self.np_dtype
     attacks_tf.tf_dtype = self.tf_dtype
 
@@ -463,7 +463,7 @@ class ProjectedGradientDescent(Attack):
 
       # Clipping perturbation eta to self.ord norm ball
       eta = adv_x - x
-      from cleverhans.utils_tf import clip_eta
+      from cleverhans_copy.utils_tf import clip_eta
       eta = clip_eta(eta, self.ord, self.eps)
       return i + 1, eta
 
@@ -1516,7 +1516,7 @@ class FastFeatureAdversaries(Attack):
     :return: a tensor for the adversarial example
     """
     import tensorflow as tf
-    from cleverhans.utils_tf import clip_eta
+    from cleverhans_copy.utils_tf import clip_eta
 
     adv_x = x + eta
     a_feat = self.model.fprop(adv_x)[self.layer]
@@ -1565,7 +1565,7 @@ class FastFeatureAdversaries(Attack):
     :param clip_max: (optional float) Maximum input component value
     """
     import tensorflow as tf
-    from cleverhans.utils_tf import clip_eta
+    from cleverhans_copy.utils_tf import clip_eta
 
     # Parse and save attack-specific parameters
     assert self.parse_params(**kwargs)

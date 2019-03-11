@@ -1,6 +1,6 @@
 import functools
 import tensorflow as tf
-from cleverhans.model import Model
+from cleverhans_copy.model import Model
 from cleverhans_tutorials.tutorial_models import HeReLuNormalInitializer
 
 

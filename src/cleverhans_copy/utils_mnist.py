@@ -14,7 +14,7 @@ import sys
 
 import numpy as np
 
-from cleverhans import utils
+from cleverhans_copy import utils
 
 
 def maybe_download_mnist_file(file_name, datadir=None, force=False):

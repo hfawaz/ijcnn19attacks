@@ -7,8 +7,8 @@ from __future__ import division
 from __future__ import print_function
 
 
-from cleverhans.devtools.list_files import list_files
-from cleverhans.utils import shell_call
+from cleverhans_copy.devtools.list_files import list_files
+from cleverhans_copy.utils import shell_call
 
 for f in list_files(".py"):
 

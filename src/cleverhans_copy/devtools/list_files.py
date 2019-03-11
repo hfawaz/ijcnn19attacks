@@ -1,6 +1,6 @@
 """Code for listing files that belong to the library."""
 import os
-import cleverhans
+import cleverhans_copy
 
 
 def list_files(suffix=""):
@@ -18,7 +18,7 @@ def list_files(suffix=""):
       A list of all files in CleverHans whose filepath ends with `suffix`
   """
 
-  cleverhans_path = os.path.abspath(cleverhans.__path__[0])
+  cleverhans_path = os.path.abspath(cleverhans_copy.__path__[0])
   # In some environments cleverhans_path does not point to a real directory.
   # In such case return empty list.
   if not os.path.isdir(cleverhans_path):

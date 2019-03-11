@@ -14,7 +14,7 @@ import numpy as np
 import tensorflow as tf
 from six.moves import xrange
 
-from cleverhans.loss import LossCrossEntropy
+from cleverhans_copy.loss import LossCrossEntropy
 from .utils import batch_indices, _ArgsWrapper, create_logger
 
 _logger = create_logger("cleverhans.utils.tfe")

@@ -10,9 +10,9 @@ from __future__ import unicode_literals
 import functools
 
 import tensorflow as tf
-from cleverhans.model import Model
-from cleverhans.picklable_model import MLP, Conv2D, ReLU, Flatten, Linear
-from cleverhans.picklable_model import Softmax
+from cleverhans_copy.model import Model
+from cleverhans_copy.picklable_model import MLP, Conv2D, ReLU, Flatten, Linear
+from cleverhans_copy.picklable_model import Softmax
 
 
 class ModelBasicCNN(Model):

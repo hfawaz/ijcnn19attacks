@@ -7,12 +7,12 @@ import numpy as np
 from six.moves import xrange
 import tensorflow as tf
 
-import cleverhans.attacks as attacks
-import cleverhans.utils as utils
-from cleverhans.compat import reduce_max
-from cleverhans.compat import reduce_sum
-from cleverhans.model import Model
-from cleverhans.loss import LossCrossEntropy
+import cleverhans_copy.attacks as attacks
+import cleverhans_copy.utils as utils
+from cleverhans_copy.compat import reduce_max
+from cleverhans_copy.compat import reduce_sum
+from cleverhans_copy.model import Model
+from cleverhans_copy.loss import LossCrossEntropy
 
 _logger = utils.create_logger("cleverhans.attacks_tfe")
 

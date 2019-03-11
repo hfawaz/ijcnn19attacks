@@ -10,22 +10,22 @@ import tensorflow.contrib.slim as slim
 import unittest
 import numpy as np
 
-from cleverhans.devtools.checks import CleverHansTest
-from cleverhans.attacks import Attack, SPSA
-from cleverhans.attacks import FastGradientMethod
-from cleverhans.attacks import BasicIterativeMethod
-from cleverhans.attacks import MomentumIterativeMethod
-from cleverhans.attacks import VirtualAdversarialMethod
-from cleverhans.attacks import SaliencyMapMethod
-from cleverhans.attacks import CarliniWagnerL2
-from cleverhans.attacks import ElasticNetMethod
-from cleverhans.attacks import DeepFool
-from cleverhans.attacks import MadryEtAl
-from cleverhans.attacks import ProjectedGradientDescent
-from cleverhans.attacks import FastFeatureAdversaries
-from cleverhans.attacks import LBFGS
-from cleverhans.attacks import SpatialTransformationMethod
-from cleverhans.model import Model
+from cleverhans_copy.devtools.checks import CleverHansTest
+from cleverhans_copy.attacks import Attack, SPSA
+from cleverhans_copy.attacks import FastGradientMethod
+from cleverhans_copy.attacks import BasicIterativeMethod
+from cleverhans_copy.attacks import MomentumIterativeMethod
+from cleverhans_copy.attacks import VirtualAdversarialMethod
+from cleverhans_copy.attacks import SaliencyMapMethod
+from cleverhans_copy.attacks import CarliniWagnerL2
+from cleverhans_copy.attacks import ElasticNetMethod
+from cleverhans_copy.attacks import DeepFool
+from cleverhans_copy.attacks import MadryEtAl
+from cleverhans_copy.attacks import ProjectedGradientDescent
+from cleverhans_copy.attacks import FastFeatureAdversaries
+from cleverhans_copy.attacks import LBFGS
+from cleverhans_copy.attacks import SpatialTransformationMethod
+from cleverhans_copy.model import Model
 from cleverhans_tutorials.tutorial_models import HeReLuNormalInitializer
 
 

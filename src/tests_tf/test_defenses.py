@@ -5,10 +5,10 @@ from __future__ import unicode_literals
 
 import unittest
 
-from cleverhans.attacks import FastGradientMethod
-from cleverhans.loss import CrossEntropy, MixUp, FeaturePairing
-from cleverhans.devtools.checks import CleverHansTest
-from cleverhans.model import Model
+from cleverhans_copy.attacks import FastGradientMethod
+from cleverhans_copy.loss import CrossEntropy, MixUp, FeaturePairing
+from cleverhans_copy.devtools.checks import CleverHansTest
+from cleverhans_copy.model import Model
 import numpy as np
 import tensorflow as tf
 

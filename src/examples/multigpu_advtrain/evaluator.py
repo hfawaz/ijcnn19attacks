@@ -6,9 +6,9 @@ import logging
 
 import tensorflow as tf
 
-from cleverhans.utils_tf import model_eval
-from cleverhans.attacks import FastGradientMethod
-from cleverhans.attacks import MadryEtAl
+from cleverhans_copy.utils_tf import model_eval
+from cleverhans_copy.attacks import FastGradientMethod
+from cleverhans_copy.attacks import MadryEtAl
 
 from attacks_multigpu import MadryEtAlMultiGPU
 

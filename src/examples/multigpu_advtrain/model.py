@@ -11,7 +11,7 @@ from __future__ import print_function
 import numpy as np
 import tensorflow as tf
 
-from cleverhans.model import Model
+from cleverhans_copy.model import Model
 
 
 def clone_variable(name, x, trainable=False):

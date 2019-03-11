@@ -14,8 +14,8 @@ import logging
 
 import tensorflow as tf
 from tensorflow.python.platform import app, flags
-from cleverhans.utils import set_log_level, to_categorical
-from cleverhans.utils_tf import model_eval
+from cleverhans_copy.utils import set_log_level, to_categorical
+from cleverhans_copy.utils_tf import model_eval
 import cifar10_input
 
 
@@ -58,7 +58,7 @@ def main(argv):
                      'clip_min': 0., 'clip_max': 255.}
 
     if FLAGS.attack_type == 'cwl2':
-      from cleverhans.attacks import CarliniWagnerL2
+      from cleverhans_copy.attacks import CarliniWagnerL2
       attacker = CarliniWagnerL2(model, sess=sess)
       attack_params.update({'binary_search_steps': 1,
                             'max_iterations': 100,
@@ -70,12 +70,12 @@ def main(argv):
     else:  # eps and eps_iter in range 0-255
       attack_params.update({'eps': 8, 'ord': np.inf})
       if FLAGS.attack_type == 'fgsm':
-        from cleverhans.attacks import FastGradientMethod
+        from cleverhans_copy.attacks import FastGradientMethod
         attacker = FastGradientMethod(model, sess=sess)
 
       elif FLAGS.attack_type == 'pgd':
         attack_params.update({'eps_iter': 2, 'nb_iter': 20})
-        from cleverhans.attacks import MadryEtAl
+        from cleverhans_copy.attacks import MadryEtAl
         attacker = MadryEtAl(model, sess=sess)
 
     eval_par = {'batch_size': FLAGS.batch_size}

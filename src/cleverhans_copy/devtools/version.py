@@ -5,7 +5,7 @@ These functions provide a finer level of granularity than the
 manually specified version string attached to each release.
 """
 import hashlib
-from cleverhans.devtools.list_files import list_files
+from cleverhans_copy.devtools.list_files import list_files
 
 
 def dev_version():

@@ -7,7 +7,7 @@ import numpy as np
 import unittest
 import tensorflow as tf
 
-from cleverhans import utils_tf
+from cleverhans_copy import utils_tf
 
 
 def numpy_kl_with_logits(p_logits, q_logits):

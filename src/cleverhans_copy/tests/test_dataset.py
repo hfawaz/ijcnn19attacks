@@ -1,4 +1,4 @@
-from cleverhans.dataset import Dataset
+from cleverhans_copy.dataset import Dataset
 
 
 class LightweightDataset(Dataset):

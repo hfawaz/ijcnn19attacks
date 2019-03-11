@@ -15,12 +15,12 @@ from six.moves import xrange
 import tensorflow as tf
 from tensorflow.python.platform import flags
 
-from cleverhans.attacks import SaliencyMapMethod
-from cleverhans.loss import CrossEntropy
-from cleverhans.utils import other_classes, set_log_level
-from cleverhans.utils import pair_visual, grid_visual, AccuracyReport
-from cleverhans.utils_mnist import data_mnist
-from cleverhans.utils_tf import train, model_eval, model_argmax
+from cleverhans_copy.attacks import SaliencyMapMethod
+from cleverhans_copy.loss import CrossEntropy
+from cleverhans_copy.utils import other_classes, set_log_level
+from cleverhans_copy.utils import pair_visual, grid_visual, AccuracyReport
+from cleverhans_copy.utils_mnist import data_mnist
+from cleverhans_copy.utils_tf import train, model_eval, model_argmax
 from cleverhans_tutorials.tutorial_models import ModelBasicCNN
 
 FLAGS = flags.FLAGS

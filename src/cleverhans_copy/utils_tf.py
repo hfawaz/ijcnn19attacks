@@ -15,11 +15,11 @@ from six.moves import xrange
 import tensorflow as tf
 from tensorflow.python.client import device_lib
 
-from cleverhans.compat import reduce_sum, reduce_mean
-from cleverhans.compat import reduce_max, reduce_min
-from cleverhans.compat import reduce_any
-from cleverhans.compat import softmax_cross_entropy_with_logits
-from cleverhans.utils import batch_indices, _ArgsWrapper, create_logger
+from cleverhans_copy.compat import reduce_sum, reduce_mean
+from cleverhans_copy.compat import reduce_max, reduce_min
+from cleverhans_copy.compat import reduce_any
+from cleverhans_copy.compat import softmax_cross_entropy_with_logits
+from cleverhans_copy.utils import batch_indices, _ArgsWrapper, create_logger
 
 _logger = create_logger("cleverhans.utils.tf")
 _logger.setLevel(logging.INFO)
@@ -286,7 +286,7 @@ def tf_model_load(sess, file_path=None):
 
 def batch_eval(*args, **kwargs):
   # Inside function to avoid circul import
-  from cleverhans.evaluation import batch_eval
+  from cleverhans_copy.evaluation import batch_eval
   warnings.warn("batch_eval has moved to cleverhans.evaluation. "
                 "batch_eval will be removed from utils_tf on or after "
                 "2019-03-09.")

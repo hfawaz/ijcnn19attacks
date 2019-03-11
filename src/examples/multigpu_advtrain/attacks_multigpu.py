@@ -2,8 +2,8 @@ from collections import OrderedDict
 
 import tensorflow as tf
 
-from cleverhans.attacks import MadryEtAl
-from cleverhans.utils_tf import clip_eta
+from cleverhans_copy.attacks import MadryEtAl
+from cleverhans_copy.utils_tf import clip_eta
 
 from model import clone_variable
 

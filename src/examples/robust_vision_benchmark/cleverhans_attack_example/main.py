@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import numpy as np
-from cleverhans.attacks import FastGradientMethod
+from cleverhans_copy.attacks import FastGradientMethod
 from robust_vision_benchmark import attack_server
 from utils import cleverhans_attack_wrapper
 

@@ -1,4 +1,4 @@
-import cleverhans.model
+import cleverhans_copy.model
 import tensorflow as tf
 import numpy as np
 
@@ -36,14 +36,14 @@ def py_func_grad(func, inp, Tout, stateful=True, name=None, grad=None):
     return tf.py_func(func, inp, Tout, stateful=stateful, name=name)
 
 
-class RVBCleverhansModel(cleverhans.model.Model):
+class RVBCleverhansModel(cleverhans_copy.model.Model):
   """This is a cleverhans model that wraps a robust vision benchmark model.
 
   """
 
   def __init__(self, adversarial, **kwargs):
     del kwargs
-    cleverhans.model.Model.__init__(
+    cleverhans_copy.model.Model.__init__(
         self, "model", self.adversarial.num_classes(), locals())
     self.adversarial = adversarial
 

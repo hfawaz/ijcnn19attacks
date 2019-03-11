@@ -25,13 +25,13 @@ import numpy as np
 from six.moves import xrange
 import tensorflow as tf
 
-from cleverhans.utils import batch_indices, _ArgsWrapper, create_logger
-from cleverhans.utils import safe_zip
-from cleverhans.utils_tf import infer_devices
-from cleverhans.compat import reduce_sum, reduce_mean
-from cleverhans.compat import reduce_max, reduce_min
-from cleverhans.compat import reduce_any
-from cleverhans.compat import softmax_cross_entropy_with_logits
+from cleverhans_copy.utils import batch_indices, _ArgsWrapper, create_logger
+from cleverhans_copy.utils import safe_zip
+from cleverhans_copy.utils_tf import infer_devices
+from cleverhans_copy.compat import reduce_sum, reduce_mean
+from cleverhans_copy.compat import reduce_max, reduce_min
+from cleverhans_copy.compat import reduce_any
+from cleverhans_copy.compat import softmax_cross_entropy_with_logits
 
 
 _logger = create_logger("train")

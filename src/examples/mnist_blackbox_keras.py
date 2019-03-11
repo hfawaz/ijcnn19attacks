@@ -18,19 +18,19 @@ from six.moves import xrange
 import tensorflow as tf
 from tensorflow.python.platform import flags
 
-from cleverhans.loss import LossCrossEntropy
-from cleverhans.model import Model
-from cleverhans.utils_mnist import data_mnist
-from cleverhans.utils import to_categorical
-from cleverhans.utils import set_log_level
-from cleverhans.utils_tf import train, model_eval, batch_eval
-from cleverhans.attacks import FastGradientMethod
-from cleverhans.attacks_tf import jacobian_graph, jacobian_augmentation
-from cleverhans.utils_keras import KerasModelWrapper
-from cleverhans.utils_keras import cnn_model
+from cleverhans_copy.loss import LossCrossEntropy
+from cleverhans_copy.model import Model
+from cleverhans_copy.utils_mnist import data_mnist
+from cleverhans_copy.utils import to_categorical
+from cleverhans_copy.utils import set_log_level
+from cleverhans_copy.utils_tf import train, model_eval, batch_eval
+from cleverhans_copy.attacks import FastGradientMethod
+from cleverhans_copy.attacks_tf import jacobian_graph, jacobian_augmentation
+from cleverhans_copy.utils_keras import KerasModelWrapper
+from cleverhans_copy.utils_keras import cnn_model
 
 from cleverhans_tutorials.tutorial_models import HeReLuNormalInitializer
-from cleverhans.utils import TemporaryLogLevel
+from cleverhans_copy.utils import TemporaryLogLevel
 
 
 FLAGS = flags.FLAGS

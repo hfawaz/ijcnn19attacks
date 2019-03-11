@@ -11,8 +11,8 @@ from __future__ import print_function
 
 from collections import OrderedDict
 import tensorflow as tf
-from cleverhans.model import Model
-from cleverhans.utils import deterministic_dict
+from cleverhans_copy.model import Model
+from cleverhans_copy.utils import deterministic_dict
 
 
 class MadryMNIST(Model):

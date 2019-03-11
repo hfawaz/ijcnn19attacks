@@ -1,8 +1,8 @@
 import tensorflow as tf
 import numpy as np
-from cleverhans.serial import PicklableVariable
-from cleverhans.serial import load
-from cleverhans.serial import save
+from cleverhans_copy.serial import PicklableVariable
+from cleverhans_copy.serial import load
+from cleverhans_copy.serial import save
 
 
 def test_save_and_load_var():

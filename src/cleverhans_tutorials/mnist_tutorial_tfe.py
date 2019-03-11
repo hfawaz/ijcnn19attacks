@@ -30,11 +30,11 @@ except AttributeError:
           "use Tensorflow version greather than 1.8.0.")
     exit(1)
 
-from cleverhans.utils_mnist import data_mnist
-from cleverhans.utils import AccuracyReport, set_log_level
-from cleverhans.utils_tfe import train, model_eval
-from cleverhans.attacks_tfe import BasicIterativeMethod
-from cleverhans.attacks_tfe import FastGradientMethod
+from cleverhans_copy.utils_mnist import data_mnist
+from cleverhans_copy.utils import AccuracyReport, set_log_level
+from cleverhans_copy.utils_tfe import train, model_eval
+from cleverhans_copy.attacks_tfe import BasicIterativeMethod
+from cleverhans_copy.attacks_tfe import FastGradientMethod
 from cleverhans_tutorials.tutorial_models_tfe import ModelBasicCNNTFE
 
 if tf.executing_eagerly() is True:

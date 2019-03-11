@@ -13,9 +13,9 @@ import numpy as np
 import six
 import tensorflow as tf
 
-from cleverhans.loss import attack_softmax_cross_entropy
-from cleverhans.utils_tf import batch_indices
-from cleverhans.utils_mnist import data_mnist
+from cleverhans_copy.loss import attack_softmax_cross_entropy
+from cleverhans_copy.utils_tf import batch_indices
+from cleverhans_copy.utils_mnist import data_mnist
 import utils_cifar as cifar_input
 import utils_svhn as svhn_input
 from utils import preprocess_batch

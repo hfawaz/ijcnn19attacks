@@ -11,7 +11,7 @@ import tensorflow as tf
 from tensorflow.contrib.slim.nets import inception
 from PIL import Image
 
-from cleverhans.attacks import FastGradientMethod
+from cleverhans_copy.attacks import FastGradientMethod
 
 slim = tf.contrib.slim
 
