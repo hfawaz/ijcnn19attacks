@@ -12,11 +12,11 @@ import keras
 from keras import backend
 import pandas as pd
 
-from cleverhans.attacks import FastGradientMethod
-from cleverhans.attacks import BasicIterativeMethod
-from cleverhans.utils import AccuracyReport
-from cleverhans.utils_keras import KerasModelWrapper
-from cleverhans.utils_tf import model_eval
+from cleverhans_copy.attacks import FastGradientMethod
+from cleverhans_copy.attacks import BasicIterativeMethod
+from cleverhans_copy.utils import AccuracyReport
+from cleverhans_copy.utils_keras import KerasModelWrapper
+from cleverhans_copy.utils_tf import model_eval
 
 from sklearn.preprocessing import LabelEncoder
 
