@@ -130,6 +130,7 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
     archive_name = 'UCR_TS_Archive_2015'
     classifier_name = 'resnet'
     out_dir = 'ucr-attack/'
+    create_directory(out_dir)
     file_path = root_dir + 'results/' + classifier_name + '/' + archive_name + '/' + dataset_name + '/best_model.hdf5'
 
     dataset_dict = read_dataset(root_dir, archive_name, dataset_name)
