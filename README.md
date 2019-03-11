@@ -26,7 +26,6 @@ All python packages needed are listed in [pip-requirements.txt](https://github.c
 * [tensorflow-gpu](https://www.tensorflow.org/)  
 * [keras](https://keras.io/)  
 * [h5py](http://docs.h5py.org/en/latest/build.html)
-* [keras_contrib](https://www.github.com/keras-team/keras-contrib.git)
 
 ## Results 
 
