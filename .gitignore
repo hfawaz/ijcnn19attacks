@@ -8,6 +8,7 @@ __pycache__/
 
 # added by Hassan
 ucr-attack/
+*.out
 
 # Distribution / packaging
 .Python
