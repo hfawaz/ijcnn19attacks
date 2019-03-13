@@ -2,177 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="669332b2-2837-44de-8225-3a6093bfd9db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/acc-ts.gif" beforeDir="false" afterPath="$PROJECT_DIR$/img/acc-ts.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pert-example.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/pert-example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/.pylintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/.setup_vm_and_run_tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/.setup_vm_and_run_tests.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/CODE_OF_CONDUCT.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/CODE_OF_CONDUCT.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/assets/logo.psd" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/assets/logo.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/attacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/attacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/attacks_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/attacks_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/attacks_tfe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/attacks_tfe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/augmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/autopep8_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/autopep8_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/checks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/list_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/list_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/mocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/mocks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/tests/docscrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/tests/docscrape.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/tests/test_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/tests/test_format.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/devtools/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/experimental/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/experimental/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/experimental/certification/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/experimental/certification/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/loss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/model_zoo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/model_zoo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/picklable_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/picklable_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/serial.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/serial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_dropout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_dropout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_serial.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_serial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_utils_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/tests/test_utils_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_keras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_mnist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_tfe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans/utils_tfe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/evaluate_pickled_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/evaluate_pickled_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_blackbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_blackbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_cw.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_cw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_jsma.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_jsma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_keras_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_keras_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_picklable.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_picklable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_tfe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_tutorial_tfe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/tutorial_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/tutorial_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/tutorial_models_tfe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/tutorial_models_tfe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/_templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/_templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/docs_requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/docs_requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/source/attacks.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/source/attacks.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/docs/source/model.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/docs/source/model.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/enjoy-adv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/enjoy-adv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/RL-attack/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/adversarial_patch/AdversarialPatch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/adversarial_patch/AdversarialPatch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/adversarial_patch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/adversarial_patch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/facenet_adversarial_faces/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/facenet_adversarial_faces/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/facenet_adversarial_faces/facenet_fgsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/facenet_adversarial_faces/facenet_fgsm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/facenet_adversarial_faces/set_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/facenet_adversarial_faces/set_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/imagenet_featadvs/attack_model_featadv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/imagenet_featadvs/attack_model_featadv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/imagenet_featadvs/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/imagenet_featadvs/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/README" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/cifar10/attack_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/cifar10/attack_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/cifar10/madry_cifar10_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/cifar10/madry_cifar10_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/mnist/attack_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/mnist/attack_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/mnist/madry_mnist_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/madry_lab_challenges/mnist/madry_mnist_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/mnist_blackbox_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/mnist_blackbox_keras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/attacks_multigpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/attacks_multigpu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/evaluator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/make_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/make_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/resnet_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/resnet_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/run_multigpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/run_multigpu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/test_attack_multigpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/test_attack_multigpu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/test_run_multigpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/test_run_multigpu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/test_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/test_runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/utils_cifar.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/utils_cifar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/utils_svhn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/multigpu_advtrain/utils_svhn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/dev_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/dev_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/download_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/download_images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/final_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dataset/final_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/run_attacks_and_defenses.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/run_attacks_and_defenses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/fgsm/attack_fgsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/fgsm/attack_fgsm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/fgsm/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/fgsm/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/noop/attack_noop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/noop/attack_noop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/noop/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/noop/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/random_noise/attack_random_noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/random_noise/attack_random_noise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/random_noise/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_attacks/random_noise/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/adv_inception_v3/defense.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/adv_inception_v3/defense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/adv_inception_v3/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/adv_inception_v3/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/base_inception_model/defense.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/base_inception_model/defense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/base_inception_model/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/base_inception_model/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/ens_adv_inception_resnet_v2/defense.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/ens_adv_inception_resnet_v2/defense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/ens_adv_inception_resnet_v2/inception_resnet_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/ens_adv_inception_resnet_v2/inception_resnet_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/ens_adv_inception_resnet_v2/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_defenses/ens_adv_inception_resnet_v2/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/iter_target_class/attack_iter_target_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/iter_target_class/attack_iter_target_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/iter_target_class/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/iter_target_class/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/step_target_class/attack_step_target_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/step_target_class/attack_step_target_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/step_target_class/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/sample_targeted_attacks/step_target_class/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/validation_tool/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/validation_tool/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/validation_tool/validate_submission.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/validation_tool/validate_submission.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/validation_tool/validate_submission_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/dev_toolkit/validation_tool/validate_submission_lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/classification_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/classification_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/cloud_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/cloud_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/dataset_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/dataset_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/image_batches.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/image_batches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/submissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/submissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/classification_results_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/classification_results_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/fake_cloud_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/fake_cloud_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/fake_cloud_client_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/fake_cloud_client_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/image_batches_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/image_batches_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/submissions_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/submissions_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/work_data_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/tests/work_data_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/work_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/eval_lib/work_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/master.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/master.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/code/worker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/validation_tool/validate_and_copy_submissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/validation_tool/validate_and_copy_submissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/validation_tool/validate_submission_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/nips17_adversarial_competition/eval_infra/validation_tool/validate_submission_lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/cleverhans_attack_example/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/cleverhans_attack_example/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/cleverhans_attack_example/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/cleverhans_attack_example/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/cleverhans_attack_example/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/robust_vision_benchmark/cleverhans_attack_example/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/examples/test_imagenet_attacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/examples/test_imagenet_attacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_pytorch/test_mnist_tutorial_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_pytorch/test_mnist_tutorial_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_attacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_attacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_attacks_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_attacks_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_defenses.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_defenses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_blackbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_blackbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_cw.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_cw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_jsma.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_jsma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_keras_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_keras_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_mnist_tutorial_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_utils_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_utils_keras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_utils_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans/tests_tf/test_utils_tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ijcnn19attacks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ijcnn19attacks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cleverhans_tutorials/tsc_tutorial_keras_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cleverhans_tutorials/tsc_tutorial_keras_tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,12 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-146">
-              <caret line="353" column="20" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="20" />
+            <state relative-caret-position="28">
+              <caret line="255" column="34" selection-start-line="255" selection-start-column="34" selection-end-line="255" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -195,10 +28,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/cleverhans_tutorials/tsc_tutorial_keras_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="326">
+              <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -209,6 +45,27 @@
     <findStrings>
       <find>DISTANCE_ALGORITHMS_PARAMS</find>
       <find>knn</find>
+      <find>NB_EPOCHS</find>
+      <find>main</find>
+      <find>nb_epochs</find>
+      <find>rng</find>
+      <find>TRAIN_DIR</find>
+      <find>batch_size</find>
+      <find>FILENAME</find>
+      <find>CrossEntropy</find>
+      <find>mnist</find>
+      <find>ucr</find>
+      <find>ucr-attack</find>
+      <find>results.csv</find>
+      <find>results.c</find>
+      <find>add_labels_to_adv_test_set</find>
+      <find>smooth</find>
+      <find>gif</find>
+      <find>eps</find>
+      <find>add_la</find>
+      <find>creat</find>
+      <find>add</find>
+      <find>++</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,8 +74,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_blackbox.py" />
+        <option value="$PROJECT_DIR$/src/pip-requirements.txt" />
+        <option value="$PROJECT_DIR$/src/cleverhans_tutorials/mnist_tutorial_keras_tf.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/cleverhans_tutorials/tsc_tutorial_keras_tf.py" />
       </list>
     </option>
   </component>
@@ -235,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,15 +103,21 @@
               <item name="ijcnn19attacks" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ijcnn19attacks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cleverhans_tutorials" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
@@ -291,6 +157,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="attack" type="PythonConfigurationType" factoryName="Python">
+      <module name="ijcnn19attacks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../dl-tsc/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="attack fgsm" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -304,21 +192,24 @@
       <updated>1552057818345</updated>
       <workItem from="1552057819876" duration="3000" />
       <workItem from="1552057867422" duration="132000" />
-      <workItem from="1552058048503" duration="211000" />
+      <workItem from="1552058048503" duration="841000" />
+      <workItem from="1552059159016" duration="197000" />
+      <workItem from="1552059416822" duration="9883000" />
+      <workItem from="1552379968808" duration="55000" />
+      <workItem from="1552472385966" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346000" />
+    <option name="totallyTimeSpent" value="11205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1202" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25751072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -328,35 +219,84 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49892703" visible="true" weight="0.32953465" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50107294" side_tool="true" weight="0.32953465" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32953465" />
-      <window_info anchor="right" x="0" y="0" width="430" height="1002" id="Documentation" side_tool="true" weight="0.3299356" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" x="0" y="0" width="430" height="1002" id="Documentation" order="5" side_tool="true" weight="0.3299356" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cleverhans/.pylintrc" />
+    <entry file="file://$PROJECT_DIR$/src/cleverhans/cleverhans/attacks.py" />
+    <entry file="file://$PROJECT_DIR$/src/cleverhans/cleverhans_tutorials/mnist_blackbox.py" />
+    <entry file="file://$PROJECT_DIR$/../dl-tsc/venv/lib/python3.6/site-packages/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="1142" column="4" selection-start-line="1142" selection-start-column="4" selection-end-line="1142" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cleverhans_copy/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip-requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/ntpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="353" column="20" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="20" />
+        <state relative-caret-position="28">
+          <caret line="255" column="34" selection-start-line="255" selection-start-column="34" selection-end-line="255" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/cleverhans_tutorials/tsc_tutorial_keras_tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="326">
+          <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

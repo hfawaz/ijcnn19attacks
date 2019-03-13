@@ -255,7 +255,6 @@ def noise(method):
     print('conf_pert',conf_pert)
     print('conf_noise',conf_noise)
 
-
     plt.figure()
     plt.plot(ori_instance, color='blue', label='original')
     plt.plot(pert_instance, color='red', label='fake')

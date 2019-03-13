@@ -251,7 +251,7 @@ def main(argv=None,attack_method='fgsm'):
                      'UWaveGestureLibraryAll', 'uWaveGestureLibrary_X', 'uWaveGestureLibrary_Y',
                      'uWaveGestureLibrary_Z', 'wafer', 'Wine', 'WordsSynonyms', 'Worms', 'WormsTwoClass', 'yoga']
 
-    dataset_names = ['Coffee']
+    # dataset_names = ['Coffee']
 
     # epsilons = np.arange(start=0.0,stop=2.0,step=0.025,dtype=np.float32)
     epsilons = [0.1]
