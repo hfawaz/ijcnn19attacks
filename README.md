@@ -25,6 +25,8 @@ All python packages needed are listed in [pip-requirements.txt](https://github.c
 * [keras](https://keras.io/)  
 * [h5py](http://docs.h5py.org/en/latest/build.html)
 
+Note that for convience we copied some of the code from the [Cleverhans API](https://github.com/tensorflow/cleverhans) and modified it to adapt it for time series data instead of images. 
+
 ## Code
 To perform the ```fgsm``` (or ```bim```) attack on the datasets in the UCR archive you can run the following command: 
 ```
