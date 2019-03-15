@@ -22,14 +22,13 @@ from sklearn.preprocessing import LabelEncoder
 
 FLAGS = flags.FLAGS
 
-BATCH_SIZE = 2048
+BATCH_SIZE = 1024
 
 def readucr(filename):
     data = np.loadtxt(filename, delimiter=',')
     Y = data[:, 0]
     X = data[:, 1:]
     return X, Y
-
 
 def read_dataset(root_dir, archive_name, dataset_name):
     datasets_dict = {}
@@ -93,15 +92,15 @@ def create_directory(directory_path):
         os.makedirs(directory_path)
     return directory_path
 
-def add_labels_to_adv_test_set(dataset_dict,dataset_name, adv_data_dir):
-    y_test = dataset_dict[dataset_name][3]
+def add_labels_to_adv_test_set(dataset_dict,dataset_name, adv_data_dir,original_y):
     x_test_perturbed = np.loadtxt(adv_data_dir+dataset_name+'-adv', delimiter=',')
-    test_set = np.zeros((y_test.shape[0],x_test_perturbed.shape[1]+1),dtype=np.float64)
-    test_set[:,0] = y_test
+    test_set = np.zeros((original_y.shape[0],x_test_perturbed.shape[1]+1),dtype=np.float64)
+    test_set[:,0] = original_y
     test_set[:,1:] = x_test_perturbed
     np.savetxt(adv_data_dir+dataset_name+'-adv',test_set,delimiter=',')
 
-def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac',eps=0.1):
+def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,
+                 dataset_name='Adiac',eps=0.1,attack_on='train'):
 
     keras.layers.core.K.set_learning_phase(0)
 
@@ -127,14 +126,36 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
     root_dir = '/b/home/uha/hfawaz-datas/dl-tsc/'
 
     # dataset_name = 'Adiac'
-    archive_name = 'UCR_TS_Archive_2015'
+    archive_name = 'TSC'
     classifier_name = 'resnet'
     out_dir = 'ucr-attack/'
-    file_path = root_dir + 'results/' + classifier_name + '/' + archive_name + '/' + dataset_name + '/best_model.hdf5'
+    file_path = root_dir + 'results/' + classifier_name + '/' + archive_name +\
+                '/' + dataset_name + '/best_model.hdf5'
+
+    adv_data_dir = out_dir+attack_method+'/'+archive_name+'/'+attack_on+\
+                   '/eps-'+str(eps)+'/'
+
+    if os.path.exists(adv_data_dir+dataset_name+'-adv'):
+        print('Already_done:',dataset_name)
+        return
+    else:
+        print('Doing:',dataset_name)
 
     dataset_dict = read_dataset(root_dir, archive_name, dataset_name)
 
-    x_train, y_train, full_x_test, full_y_test, _, nb_classes = prepare_data(dataset_dict,dataset_name)
+    x_train, y_train, x_test, y_test, _, nb_classes = prepare_data(dataset_dict,dataset_name)
+
+    if attack_on == 'train':
+        X = x_train
+        Y = y_train
+        original_y = dataset_dict[dataset_name][1]
+    elif attack_on =='test':
+        X = x_test
+        Y = y_test
+        original_y = dataset_dict[dataset_name][3]
+    else:
+        print('Error either train or test options for attack_on param')
+        exit()
 
     # for big datasets we should decompose in batches the evaluation of the attack
     # loop through the batches
@@ -148,12 +169,11 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
         res_ori = pd.DataFrame(data=np.zeros((0, 3), dtype=np.float), index=[],
                                columns=['dataset_name', 'ori_acc', 'adv_acc'])
 
-    test_set = np.zeros((full_y_test.shape[0], x_train.shape[1] + 1), dtype=np.float64)
-    original_y = dataset_dict[dataset_name][3]
+    test_set = np.zeros((Y.shape[0], x_train.shape[1] + 1), dtype=np.float64)
 
-    for i in range(0,len(full_x_test),batch_size):
-        x_test = full_x_test[i:i+batch_size]
-        y_test = full_y_test[i:i+batch_size]
+    for i in range(0,len(X),batch_size):
+        curr_X = X[i:i+batch_size]
+        curr_Y = Y[i:i+batch_size]
 
         # Obtain series Parameters
         img_rows, nchannels = x_train.shape[1:3]
@@ -170,14 +190,14 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
         def evaluate():
             # Evaluate the accuracy of the model on legitimate test examples
             eval_params = {'batch_size': batch_size}
-            acc = model_eval(sess, x, y, preds, x_test, y_test, args=eval_params)
+            acc = model_eval(sess, x, y, preds, curr_X, curr_Y, args=eval_params)
             report.clean_train_clean_eval = acc
             print('Test accuracy on legitimate examples: %0.4f' % acc)
             return acc
 
         wrap = KerasModelWrapper(model)
 
-        ori_acc += evaluate() * len(x_test)/len(full_x_test)
+        ori_acc += evaluate() * len(curr_X)/len(X)
 
         if attack_method == 'fgsm':
             # Initialize the Fast Gradient Sign Method (FGSM) attack object and graph
@@ -196,28 +216,27 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,dataset_name='Adiac'
         # Consider the attack to be constant
         adv_x = tf.stop_gradient(adv_x)
 
-        adv = adv_x.eval({x: x_test}, session=sess)
+        adv = adv_x.eval({x: curr_X}, session=sess)
         adv = adv.reshape(adv.shape[0],adv.shape[1])
 
         preds_adv = model(adv_x)
 
         # Evaluate the accuracy of the model on adversarial examples
         eval_par = {'batch_size': batch_size}
-        acc = model_eval(sess, x, y, preds_adv, x_test, y_test, args=eval_par)
+        acc = model_eval(sess, x, y, preds_adv, curr_X, curr_Y, args=eval_par)
         print('Test accuracy on adversarial examples: %0.4f\n' % acc)
         report.clean_train_adv_eval = acc
-        adv_acc += acc * len(x_test)/len(full_x_test)
+        adv_acc += acc * len(curr_X)/len(X)
 
         test_set[i:i+batch_size,0] = original_y[i:i+batch_size]
         test_set[i:i+batch_size,1:] = adv
 
-    adv_data_dir = out_dir+attack_method+'/eps-'+str(eps)+'/'
 
     create_directory(adv_data_dir)
 
     np.savetxt(adv_data_dir+dataset_name+'-adv',test_set, delimiter=',')
 
-    add_labels_to_adv_test_set(dataset_dict, dataset_name, adv_data_dir)
+    add_labels_to_adv_test_set(dataset_dict, dataset_name, adv_data_dir,original_y)
 
     res = pd.DataFrame(data = np.zeros((1,3),dtype=np.float), index=[0],
             columns=['dataset_name','ori_acc','adv_acc'])
